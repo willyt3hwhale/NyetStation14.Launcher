@@ -26,7 +26,7 @@ public static class ConfigConstants
     // Amount of time to wait to let a redialling client properly die
     public const int LauncherCommandsRedialWaitTimeout = 1000;
 
-    public static readonly string AuthUrl = "https://auth.spacestation14.com/";
+    public static readonly string AuthUrl = "http://ss14.willy.e01.internyet.party:8000/";
     public static readonly Uri[] DefaultHubUrls = { new("https://hub.spacestation14.com/") };
     public const string DiscordUrl = "https://discord.ss14.io/";
     public const string AccountBaseUrl = "https://account.spacestation14.com/Identity/Account/";
@@ -39,8 +39,8 @@ public static class ConfigConstants
     public const string TranslateUrl = "https://docs.spacestation14.com/en/general-development/contributing-translations.html";
 
     private static readonly UrlFallbackSet RobustBuildsBaseUrl = new([
-        "https://robust-builds.cdn.spacestation14.com/",
-        "https://robust-builds.fallback.cdn.spacestation14.com/"
+        "http://ss14.willy.e01.internyet.party:8001/",
+        "http://ss14.willy.e01.internyet.party:8001/"
     ]);
 
     private static readonly UrlFallbackSet LauncherDataBaseUrl = new([
